@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @package   plg_radicalmart_fields_gallery
+  ~ @version   __DEPLOY_VERSION__
+  ~ @author    Dmitriy Vasyukov - https://fictionlabs.ru
+  ~ @copyright Copyright (c) 2023 Fictionlabs. All rights reserved.
+  ~ @license   GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+  ~ @link      https://fictionlabs.ru/
+  -->
+
+<form>
+    <fieldset name="content">
+        <fields name="params">
+            <field name="type"
+                   type="list"
+                   label="PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE">
+                <option value="image">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_IMAGE</option>
+                <option value="video">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_VIDEO</option>
+            </field>
+        </fields>
+    </fieldset>
+    <fieldset name="display_products" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_PRODUCTS">
+        <fields name="params">
+            <field name="display_products" type="radio"
+                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   class="btn-group btn-group-yesno"
+                   default="1">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="display_products_as" type="list"
+                   label="PLG_RADICALMART_FIELDS_GALLERY_DISPLAY_PRODUCT_AS"
+                   default="string"
+                   showon="display_products:1">
+                <option value="grid">PLG_RADICALMART_FIELDS_GALLERY_DISPLAY_PRODUCT_AS_GRID</option>
+                <option value="list">PLG_RADICALMART_FIELDS_GALLERY_DISPLAY_PRODUCT_AS_LIST</option>
+            </field>
+        </fields>
+    </fieldset>
+    <fieldset name="display_product" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_PRODUCT">
+        <fields name="params">
+            <field name="display_product" type="radio"
+                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   class="btn-group btn-group-yesno"
+                   default="1">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="display_product_as" type="list"
+                   label="PLG_RADICALMART_FIELDS_GALLERY_DISPLAY_PRODUCT_AS"
+                   default="string"
+                   showon="display_product:1">
+                <option value="grid">PLG_RADICALMART_FIELDS_GALLERY_DISPLAY_PRODUCT_AS_GRID</option>
+                <option value="list">PLG_RADICALMART_FIELDS_GALLERY_DISPLAY_PRODUCT_AS_LIST</option>
+            </field>
+        </fields>
+    </fieldset>
+    <fieldset name="display_filter" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_FILTER">
+        <fields name="params">
+            <field name="display_filter" type="radio"
+                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   class="btn-group btn-group-yesno"
+                   default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fields>
+    </fieldset>
+    <fieldset name="display_variability" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_VARIABILITY">
+        <fields name="params">
+            <field name="display_variability" type="radio"
+                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   class="btn-group btn-group-yesno"
+                   default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fields>
+    </fieldset>
+</form>
