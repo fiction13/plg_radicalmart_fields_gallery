@@ -65,8 +65,6 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	public function __construct(&$subject, $config = array())
 	{
 		parent::__construct($subject, $config);
-
-
 	}
 
 	/**
@@ -321,7 +319,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 		foreach ($types as $key => $type)
 		{
 			$types[$key] = [
-				'layout_field_gallery' => 'plugins.radicalmart_fields.gallery.display.type.' . $key
+				'layout_field_gallery' => 'plugins.radicalmart_fields.gallery.item.' . $key
 			];
 		}
 

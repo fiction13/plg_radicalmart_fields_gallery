@@ -11,11 +11,12 @@
 <form>
     <fieldset name="content">
         <fields name="params">
-            <field name="type"
+            <field name="gallery_type"
                    type="list"
                    label="PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE">
                 <option value="image">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_IMAGE</option>
                 <option value="video">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_VIDEO</option>
+                <option value="file">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_FILE</option>
             </field>
         </fields>
     </fieldset>

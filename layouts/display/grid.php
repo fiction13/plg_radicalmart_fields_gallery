@@ -36,7 +36,7 @@ extract($displayData);
 
 			if (!$html)
 			{
-				$html = LayoutHelper::render('plugins.radicalmart_fields.gallery.display.type.default',
+				$html = LayoutHelper::render('plugins.radicalmart_fields.gallery.item.default',
 					['field' => $field, 'value' => $value]);
 			}
 
