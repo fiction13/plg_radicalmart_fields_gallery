@@ -231,7 +231,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 		$fieldsXml->addAttribute('name', $field->alias);
 		$fieldsXml->addAttribute('label', $field->title);
 		$fieldsXml->addAttribute('type', 'gallery');
-		$fieldsXml->addAttribute('addfieldprefix', 'Joomla\Plugin\RadicalMart\Field');
+		$fieldsXml->addAttribute('addfieldprefix', '\\Joomla\\Component\\RadicalMart\\Field');
 		$fieldsXml->addAttribute('parentclass', 'stack radicalmart-field-gallery');
 
 		return $fieldsXml;
@@ -325,6 +325,11 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 
 		$html = LayoutHelper::render('plugins.radicalmart_fields.gallery.display.' . $layout,
 			['field' => $field, 'values' => $value, 'types' => $types]);
+
+//		if (!trim(strip_tags($html)))
+//		{
+//			return false;
+//		}
 
 		return $html;
 	}

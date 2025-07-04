@@ -22,10 +22,14 @@ extract($displayData);
  *
  * @var  object $field Field data object.
  * @var  array  $value Field value.
+ * @var array   $data  File data
  *
  */
 
-$data = GalleryHelper::getFileData($value['src']);
+if (empty($value['text']))
+{
+    $value['text'] = Text::_('PLG_RADICALMART_FIELDS_GALLERY_TYPE_FILE_TEXT');
+}
 
 ?>
 

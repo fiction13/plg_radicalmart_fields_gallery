@@ -13,7 +13,8 @@
         <fields name="params">
             <field name="gallery_type"
                    type="list"
-                   label="PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE">
+                   label="PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE"
+                   required="true">
                 <option value="image">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_IMAGE</option>
                 <option value="video">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_VIDEO</option>
                 <option value="file">PLG_RADICALMART_FIELDS_GALLERY_PARAMS_TYPE_FILE</option>

@@ -31,7 +31,7 @@ return new class implements ServiceProviderInterface {
 	{
 		$container->set(PluginInterface::class,
 			function (Container $container) {
-				$plugin  = PluginHelper::getPlugin('radicalmart_fields', 'cascade');
+				$plugin  = PluginHelper::getPlugin('radicalmart_fields', 'related');
 				$subject = $container->get(DispatcherInterface::class);
 
 				$plugin = new Gallery($subject, (array) $plugin);

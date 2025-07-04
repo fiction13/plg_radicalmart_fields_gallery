@@ -9,6 +9,7 @@
  */
 
 use Joomla\CMS\Layout\LayoutHelper;
+use Joomla\Plugin\RadicalMartFields\Gallery\Helper\GalleryHelper;
 
 defined('_JEXEC') or die;
 
@@ -29,13 +30,27 @@ extract($displayData);
 	<?php foreach ($values as $value) : ?>
         <li class="list-group-item">
 			<?php
+			$data = GalleryHelper::getFileData($value['src']);
+
+			if (!$data)
+			{
+				continue;
+			}
+
 			$html = LayoutHelper::render($types[$value['type']]['layout_field_gallery'],
-				['field' => $field, 'value' => $value]);
+				['field' => $field, 'value' => $value, 'data' => $data]);
 
 			if (!$html)
 			{
+				$data = GalleryHelper::getFileData($value['src']);
+
+				if (!$data)
+				{
+					continue;
+				}
+
 				$html = LayoutHelper::render('plugins.radicalmart_fields.gallery.item.default',
-					['field' => $field, 'value' => $value]);
+					['field' => $field, 'value' => $value, 'data' => $data]);
 			}
 
 			echo $html;
