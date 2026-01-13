@@ -326,11 +326,6 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 		$html = LayoutHelper::render('plugins.radicalmart_fields.gallery.display.' . $layout,
 			['field' => $field, 'values' => $value, 'types' => $types]);
 
-//		if (!trim(strip_tags($html)))
-//		{
-//			return false;
-//		}
-
 		return $html;
 	}
 }

@@ -24,7 +24,7 @@
     <fieldset name="display_products" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_PRODUCTS">
         <fields name="params">
             <field name="display_products" type="radio"
-                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   label="COM_RADICALMART_DISPLAY"
                    class="btn-group btn-group-yesno"
                    default="1">
                 <option value="1">JYES</option>
@@ -42,7 +42,7 @@
     <fieldset name="display_product" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_PRODUCT">
         <fields name="params">
             <field name="display_product" type="radio"
-                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   label="COM_RADICALMART_DISPLAY"
                    class="btn-group btn-group-yesno"
                    default="1">
                 <option value="1">JYES</option>
@@ -60,7 +60,7 @@
     <fieldset name="display_filter" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_FILTER">
         <fields name="params">
             <field name="display_filter" type="radio"
-                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   label="COM_RADICALMART_DISPLAY"
                    class="btn-group btn-group-yesno"
                    default="0">
                 <option value="0">JNO</option>
@@ -71,7 +71,7 @@
     <fieldset name="display_variability" label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_VARIABILITY">
         <fields name="params">
             <field name="display_variability" type="radio"
-                   label="COM_RADICALMART_PARAMS_FIELD_DISPLAY_SELECT"
+                   label="COM_RADICALMART_DISPLAY"
                    class="btn-group btn-group-yesno"
                    default="0">
                 <option value="0">JNO</option>
