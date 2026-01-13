@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ @package   plg_radicalmart_fields_gallery
-  ~ @version   __DEPLOY_VERSION__
+  ~ @version   1.0.0
   ~ @author    Dmitriy Vasyukov - https://fictionlabs.ru
   ~ @copyright Copyright (c) 2023 Fictionlabs. All rights reserved.
   ~ @license   GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
@@ -11,12 +11,12 @@
 <extension version="4.2" type="plugin" group="radicalmart_fields" method="upgrade">
 	<name>PLG_RADICALMART_FIELDS_GALLERY</name>
     <author>Dmitriy Vasyukov</author>
-    <creationDate>January 2023</creationDate>
+    <creationDate>January 2026</creationDate>
     <authorEmail>info@fictionlabs.ru</authorEmail>
     <authorUrl>https://fictionlabs.ru</authorUrl>
     <copyright>A copyright</copyright>
     <license>GNU General Public License version 2 or later;</license>
-    <version>0.0.1-dev</version>
+    <version>1.0.0</version>
     <description>PLG_RADICALMART_FIELDS_GALLERY_DESCRIPTION</description>
 	<namespace path="src">Joomla\Plugin\RadicalMartFields\Gallery</namespace>
 	<scriptfile>script.php</scriptfile>

@@ -1,7 +1,7 @@
 <?php
 /*
  * @package   plg_radicalmart_fields_gallery
- * @version   __DEPLOY_VERSION__
+ * @version   1.0.0
  * @author    Dmitriy Vasyukov - https://fictionlabs.ru
  * @copyright Copyright (c) 2023 Fictionlabs. All rights reserved.
  * @license   GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
@@ -30,7 +30,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @var    bool
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	protected $autoloadLanguage = true;
 
@@ -39,7 +39,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @var  \Joomla\CMS\Application\CMSApplication
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	protected $app = null;
 
@@ -48,7 +48,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @var  \Joomla\Database\DatabaseDriver
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	protected $db = null;
 
@@ -60,7 +60,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *                                          Recognized key values include 'name', 'group', 'params', 'language'
 	 *                                          (this list is not meant to be comprehensive).
 	 *
-	 * @since   __DEPLOY_VERSION__
+	 * @since   1.0.0
 	 */
 	public function __construct(&$subject, $config = array())
 	{
@@ -72,7 +72,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @return  array
 	 *
-	 * @since   __DEPLOY_VERSION__
+	 * @since   1.0.0
 	 */
 	public static function getSubscribedEvents(): array
 	{
@@ -94,7 +94,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @return string|false Field type constant on success, False on failure.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	public function onRadicalMartGetFieldType($context = null, $item = null)
 	{
@@ -108,7 +108,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 * @param   Form|null      $form     Form object.
 	 * @param   Registry|null  $tmpData  Temporary form data.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	public function onRadicalMartGetFieldForm(string $context = null, Form $form = null, Registry $tmpData = null)
 	{
@@ -138,7 +138,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 * @param   Form|null      $form     Form object.
 	 * @param   Registry|null  $tmpData  Temporary form data.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	protected function loadFieldProductsForm(Form $form = null, Registry $tmpData = null)
 	{
@@ -160,7 +160,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 * @param   Form|null      $form     Form object.
 	 * @param   Registry|null  $tmpData  Temporary form data.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	public function onRadicalMartAfterGetFieldForm(string $context = null, Form $form = null, Registry $tmpData = null)
 	{
@@ -190,7 +190,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 * @param   Form|null      $form     Form object.
 	 * @param   Registry|null  $tmpData  Temporary form data.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	protected function changeFieldProductsForm(Form &$form = null, Registry $tmpData = null)
 	{
@@ -207,7 +207,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @return false|\SimpleXMLElement SimpleXMLElement on success, False on failure.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	public function onRadicalMartGetProductFieldXml(string $context = null, object $field = null, Registry $tmpData = null)
 	{
@@ -246,7 +246,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @return  string|false  Field html value.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	public function onRadicalMartGetProductsFieldValue(string $context = null, object $field = null, $value = null)
 	{
@@ -271,7 +271,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @return  string  Field html value.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	public function onRadicalMartGetProductFieldValue($context = null, $field = null, $value = null)
 	{
@@ -295,7 +295,7 @@ class Gallery extends CMSPlugin implements SubscriberInterface
 	 *
 	 * @return  string|false  Field string values on success, False on failure.
 	 *
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.0.0
 	 */
 	protected function getFieldValue(object $field = null, $value = null, string $layout = 'grid')
 	{
